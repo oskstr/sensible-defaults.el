@@ -210,13 +210,9 @@ respectively."
   (define-key global-map (kbd "C-_") 'text-scale-decrease)
   (define-key global-map (kbd "C--") 'text-scale-decrease))
 
-(defun sensible-defaults/bind-magit-status ()
-  "Open magit-status by hitting C-x g."
-  (global-set-key (kbd "C-x g") 'magit-status))
 
 (defun sensible-defaults/use-all-keybindings ()
   "Use all of the sensible-defaults keybindings."
   (sensible-defaults/bind-commenting-and-uncommenting)
   (sensible-defaults/bind-home-and-end-keys)
-  (sensible-defaults/bind-keys-to-change-text-size)
-  (sensible-defaults/bind-magit-status))
+  (sensible-defaults/bind-keys-to-change-text-size))
